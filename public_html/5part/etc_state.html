@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>html5 basic</title>
+        <style>
+            input:enabled{background-color: aqua;}
+            input:disabled{background-color: gray;}
+            input:focus{background-color: orange;}
+            input:checked{background-color: blue;}
+            
+            input[type=email]:focus{background-color: red;}
+        </style>
+    </head>
+    <body>
+        <form action="#">
+            text:<input type="text" name="text" id="text"><br>
+            password:<input type="password" name="password" id="password" disabled="disabled"><br>
+            checkbox <input type="checkbox" name="chekcbox" id="checkbox"><br>
+            radio <input type="radio" name="radio" id="radio"><br>
+            email:<input type="email" name="email" id="email"><br>
+        </form>
+    </body>
+</html>
