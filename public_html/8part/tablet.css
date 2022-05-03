@@ -1,0 +1,9 @@
+
+/* 테블릿pc 세로 */
+@media (orientation:portrait){
+    body{background-color: green;}
+}
+/* 테블릿pc 가로 */
+@media (orientation:landscape){
+    body{background-color: coral;}
+}

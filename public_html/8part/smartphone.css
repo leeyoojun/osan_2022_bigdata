@@ -1,0 +1,9 @@
+
+/* 스마트폰 세로 */
+@media (orientation:portrait){
+    body{background-color: red;}
+}
+/* 스마트폰 가로 */
+@media (orientation:landscape){
+    body{background-color: aqua;}
+}

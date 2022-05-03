@@ -1,0 +1,9 @@
+
+/* pc print 세로*/
+@media (orientation:portrait){
+    body{background-color: dimgray;}
+}
+/* pc print 가로*/
+@media (orientation:landscape){
+    body{background-color:pink;}
+}
