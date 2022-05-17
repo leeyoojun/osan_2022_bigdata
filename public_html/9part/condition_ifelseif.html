@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>html5 basic</title>
+        <script>
+            var date = new Date();
+            var hours = date.getHours();
+            if(hours < 5){
+                document.write(hours + '시는 더 자렴 입니다.');
+            }else if(hours < 7){
+                    document.write(hours + '시는 준비입니다.');
+            }else if(hours < 9){
+                document.write(hours + '시는 출근입니다.');
+            }else if(hours < 12){
+                document.write(hours + '시는 빈둥빈둥 입니다.');
+            }else if(hours < 14){
+                document.write(hours + '시는 점심식사 입니다.');
+            }else{
+                document.write(hours + '시는 업무시간 입니다.');
+            }
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
