@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>html5 basic</title>
+        <script>
+            var array = [273, '문자열', true, function(){}, {}, [32,103]];
+            document.write(array);
+            console.log(array);
+
+            var array2 = ['가','나','다','라'];
+            document.write("==========array2변경전<br>" + array2);
+            console.log("==========array2변경전");
+            console.log(array2);
+            array2[0] = '가1';
+            array2[1] = '나2';
+            array2[2] = '다3';
+            array2[3] = '라4';
+            document.write("==========array2변경후<br>" + array2);
+            console.log("==========array2변경후");
+            console.log(array2);
+
+            var array3 = {"a1":"가","b2":"나","c3":"다","d4":"라"};
+            document.write("==========array3변경전<br>" + array3['a1']);
+            console.log("==========array3변경전");
+            console.log(array3);
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
