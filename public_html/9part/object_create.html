@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>html5 basic</title>
+        <script>
+            // var product = {
+            //     제품명:'7D 건조 망고',
+            //     유형:'당절임',
+            //     성분:'망고,설탕,메타중아황산나트륨,치자황색소',
+            //     원산지:'필리핀'
+            // };
+            var product = {
+                product_no1:{
+                    name:'7D 건조 망고',
+                    type:'당절임',
+                    ingred:'망고,설탕,메타중아황산나트륨,치자황색소',
+                    origin:'필리핀'
+                },
+                product_no2:{
+                    name:'7D 건조 망고1',
+                    type:'당절임1',
+                    ingred:'망고,설탕,메타중아황산나트륨,치자황색소1',
+                    origin:'필리핀1'
+                }
+            };
+            for(var i in product){
+                //alert(i + ":" + product[i] + "-");
+                console.log(
+                    i + ":" + product[i].name + "-\n" + product[i].type + "-\n" + product[i].ingred + "-\n" + product[i].origin + "-\n");
+                document.write(
+                    i + ":" + product[i].name + "-<br>" + product[i].type + "-<br>" + product[i].ingred + "-<br>" + product[i].origin + "-<br>");
+
+            }
+            
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

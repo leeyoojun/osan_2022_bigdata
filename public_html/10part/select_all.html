@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>Document Object Model</title>
+        <script>
+            window.onload = function(){
+                // var headers = document.querySelectorAll("h1");
+                var headers = document.getElementsByClassName("header");
+                for(var i=0;i<headers.length;i++){
+                    var header = headers[i];
+                    header.style.color = 'orange';
+                    header.style.backgroundColor = 'red';
+                    header.innerHTML = 'From JavaScript' + i + ' abcd' + i;
+                }
+            };
+        </script>
+    </head>
+    <body>
+        <h1 class="header">Header</h1>
+        <h2>Lorem ipsum dolor amet</h2>
+        <h1 class="header">Header</h1>
+        <p>Lorem ipsum dolor amet</p>
+        <h1 class="header">Header</h1>
+    </body>
+</html>
