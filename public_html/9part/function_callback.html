@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>html5 basic</title>
+        <script>
+            function calltentimes(callback2,iend){
+                for(var i=0; i<iend; i++){
+                    callback2(i);
+                }
+            }
+
+            // var callback = function(i){document.write(i + "콜백함수 호출<br>");}
+            // calltentimes(callback,20);
+                        
+            calltentimes(function(i){document.write(i + "콜백함수 호출<br>");},15);
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
