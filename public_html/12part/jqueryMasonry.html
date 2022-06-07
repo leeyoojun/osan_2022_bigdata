@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>Document Object Model</title>
+        <style>
+            *{margin: 0;padding: 0;}
+            .box{
+                background: beige;
+                margin: 5px;
+            }
+        </style>
+        <script src="../11part/jquery-3.6.0.min.js"></script>
+        <script src="./masonry.pkgd.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                var count = 0;
+                var frames = [
+                    '0.png','1.png','2.png','3.png','4.png',
+                    '5.png','6.png','7.png','8.png','9.png',
+                    '10.png','11.png','12.png','13.png','14.png'
+                ];
+                for(var i=0;i<200;i++){
+                    var img_src = './frameanimation/' + frames[count % frames.length];
+                    count++;
+                    var div_heigth = Math.floor(Math.random() * 100) + 50;
+                    $('<div><img src='+img_src+' width=95px heigth='+div_heigth+'px></div>').addClass('box').css({
+                        width:100,
+                        height:div_heigth
+                    }).appendTo('body');
+                }
+
+                $('body').masonry({
+                    columnWidth:110
+                });
+            });
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
