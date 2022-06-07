@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>Document Object Model</title>
+        <script>
+            window.onload = function(){
+                var image = document.getElementById('image');
+
+                image.src = 'http://via.placeholder.com/300X200';
+                image.width = 300;
+                image.height = 200;
+
+                setInterval(setclock,1000);
+
+            };
+
+            function setclock(){
+                var clock = document.getElementById('clock');
+                var now = new Date();
+                clock.innerHTML = now.toString();
+            }
+        </script>
+    </head>
+    <body>
+        <img id="image">
+        <h1 id="clock"></h1>
+    </body>
+</html>

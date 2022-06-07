@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>Document Object Model</title>
+        <script>
+            window.onload = function(event){
+                var button = document.getElementById('button');
+                button.onclick = function(){
+                    alert('click3');
+                };
+                alert(event);
+
+                var abutton = document.getElementById('abutton');
+                abutton.onclick = function(){
+                    alert('버튼4 링크 이벤트 제거함.');
+                    return false;
+                };
+            };
+        </script>
+    </head>
+    <body>
+        <button id="button">버튼3</button>&nbsp;&nbsp;&nbsp;
+        <a id="abutton" href="http://hanbit.co.kr">버튼4</a>
+    </body>
+</html>

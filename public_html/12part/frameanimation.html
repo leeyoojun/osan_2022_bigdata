@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>Document Object Model</title>
+        <script>
+            window.onload = function(){
+                var count = 0;
+                var image = document.getElementById('image1');
+                var frames = [
+                    '0.png','1.png','2.png','3.png','4.png',
+                    '5.png','6.png','7.png','8.png','9.png',
+                    '10.png','11.png','12.png','13.png','14.png'
+                ];
+
+                setInterval(function(){
+                    var img_src = './frameanimation/' + frames[count % frames.length];
+                    console.log(img_src);
+                    image.src = img_src;
+
+                    count++;
+                },1000/20);
+            };
+        </script>
+    </head>
+    <body>
+        <img id="image1">
+    </body>
+</html>

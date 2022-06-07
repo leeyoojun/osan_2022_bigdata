@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>Document Object Model</title>
+        <script src="jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                // $('img').attr('alt','jquery 라이브러리를 사용한 속성 지정');
+                // $('img').attr('src','http://via.placeholder.com/100x100');
+                // $('img').attr('width','100');
+                // $('img').attr({
+                //     alt:'jquery 라이브러리를 사용한 속성 지정22',
+                //     src:'http://via.placeholder.com/200x200',
+                //     width:200
+                // });
+                $('img').attr({
+                    alt:'jquery 라이브러리를 사용한 속성 지정22',
+                    src:function(index){
+                        var size = (index + 1) * 100;
+                        return 'http://via.placeholder.com/' + size + 'x200'
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <img>
+        <img>
+        <img>
+        <img>
+    </body>
+</html>

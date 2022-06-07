@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>Document Object Model</title>
+        <script src="../11part/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                var appendDocument = function(){
+                    for(var i=0;i<30;i++){
+                        $('<h1>Infinity Scroll Object '+i+'</h1>').appendTo('body');
+                    }
+                };
+                appendDocument();
+
+                $(window).scroll(function(){
+                    var scrollHeight = Math.ceil($(window).scrollTop() + $(window).height());
+                    var documentHeight = $(document).height();
+                    console.log(scrollHeight+'=='+documentHeight);
+                    if(scrollHeight==documentHeight){
+                        console.log('추가 실행 : appendDocument();');
+                        appendDocument();
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Infinity Scroll Object 0</h1>
+    </body>
+</html>

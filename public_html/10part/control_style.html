@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>Document Object Model</title>
+        <script>
+            window.onload = function(){
+                var output = '';
+                for(var i=0;i<256;i++){
+                    output += '<div></div>';
+                }
+                document.body.innerHTML = output;
+
+                var divs = document.querySelectorAll('div');
+                for(var i=0;i<divs.length;i++){
+                    var div = divs[i];
+                    div.style.height = '2px';
+                    div.style.background = 'rgb('+i+','+i+','+i+')';
+                    console.log('rgb('+i+','+i+','+i+')');
+                }
+            };
+        </script>
+    </head>
+    <body>
+        <h1 class="header">Header</h1>
+        <h2>Lorem ipsum dolor amet</h2>
+        <h1 class="header">Header</h1>
+        <p>Lorem ipsum dolor amet</p>
+        <h1 class="header">Header</h1>
+    </body>
+</html>
